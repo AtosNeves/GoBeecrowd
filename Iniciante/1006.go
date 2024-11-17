@@ -10,7 +10,7 @@ func main() {
 
 	fmt.Scan(&a, &b, &c)
 	d = calcularMedia(a, b, c, d)
-	var resultado = formatar(d)
+	var resultado = formatarMedia(d)
 	fmt.Println("MEDIA =", resultado)
 }
 
@@ -20,7 +20,7 @@ func calcularMedia(a, b, c, d float32) float32 {
 
 }
 
-func formatar(d float32) string {
+func formatarMedia(d float32) string {
 
 	return strconv.FormatFloat(float64(d), 'f', 1, 32)
 
